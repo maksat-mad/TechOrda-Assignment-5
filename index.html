@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="calculator">
+    <div class="display">
+        <div id="result" class="result"></div>
+        <div id="valid-expr" class="error">
+            enter a valid expression
+        </div>
+        <div id="valid-num" class="error">
+            enter number not operation
+        </div>
+        <div id="valid-dot" class="error">
+            can not enter . repeatedly
+        </div>
+    </div>
+    <div class="calc-buttons">
+        <button onclick="insert('/')">/</button>
+        <button onclick="insert('*')">&times;</button>
+        <button onclick="insert('+')">+</button>
+        <button onclick="insert('-')">-</button>
+        <button onclick="insert('(')">(</button>
+        <button onclick="insert(')')">)</button>
+        <button onclick="insert('.')">.</button>
+        <button class="del" onclick="insert('del')">del</button>
+        <button class="del" onclick="insert('cls')">cls</button>
+        <button class="equal" onclick="calculate()">=</button>
+    </div>
+    <div class="calc-buttons">
+        <button onclick="insert('1')">1</button>
+        <button onclick="insert('2')">2</button>
+        <button onclick="insert('3')">3</button>
+        <button onclick="insert('4')">4</button>
+        <button onclick="insert('5')">5</button>
+        <button onclick="insert('6')">6</button>
+        <button onclick="insert('7')">7</button>
+        <button onclick="insert('8')">8</button>
+        <button onclick="insert('9')">9</button>
+        <button onclick="insert('0')">0</button>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
